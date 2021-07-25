@@ -7,13 +7,23 @@ Usage:
 
 You need to provide following environment variables:
 
-* DB_NAME - name of the PostgreSQL database to use
-* DB_USER - login for PostgreSQL
-* DB_PASSWORD - password for PostgreSQL
-* DB_HOST - host where PostgreSQL is located
+* `DB_NAME` - name of the PostgreSQL database to use
+* `DB_USER` - login for PostgreSQL
+* `DB_PASSWORD` - password for PostgreSQL
+* `DB_HOST` - host where PostgreSQL is located
 
 The scripts uses port 80 to serve WordPress over HTTP, 
 so configure your certificates on a reverse proxy.
+
+As usual, after you configure your reverse proxy visit
+https://domainname.example.com/wp-admin/install.php to install
+WordPress.
+
+# Advanced use cases
+
+If you intend on installing custom plugins, you might want to
+declare `/var/www/html/wp-content/plugins` as a volume.
+Remember to place the necessary files there though.
 
 # Special thanks
 
