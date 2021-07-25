@@ -2,8 +2,7 @@ wordpress-pgsql
 ===============
 A Wordpress Docker image with PostgreSQL support
 
-
-Usage:
+# Usage
 
 You need to provide following environment variables:
 
@@ -12,8 +11,14 @@ You need to provide following environment variables:
 * `DB_PASSWORD` - password for PostgreSQL
 * `DB_HOST` - host where PostgreSQL is located
 
-The scripts uses port 80 to serve WordPress over HTTP, 
-so configure your certificates on a reverse proxy.
+The container uses port 80 to handle WordPress
+requests over HTTP.
+
+As usual, after you configure your reverse proxy visit
+https://domainname.example.com/wp-admin/install.php to install
+WordPress.
+
+## Reverse proxy terminating SSL
 
 If you are using a reverse proxy to terminate SSL, make sure it 
 passes the header of `X-Forwarded-Proto` as `https`, otherwise
@@ -21,11 +26,7 @@ WordPress will generate invalid links,
 and also be sure to set the environment variable
 of `FORCE_SSL_ADMIN` to `1`.
 
-As usual, after you configure your reverse proxy visit
-https://domainname.example.com/wp-admin/install.php to install
-WordPress.
-
-# Advanced use cases
+## Plugins surviving restarts
 
 If you intend on installing custom plugins, you might want to
 declare `/var/www/html/wp-content/plugins` as a volume.
