@@ -17,7 +17,9 @@ so configure your certificates on a reverse proxy.
 
 If you are using a reverse proxy to terminate SSL, make sure it 
 passes the header of `X-Forwarded-Proto` as `https`, otherwise
-WordPress will generate invalid links.
+WordPress will generate invalid links,
+and also be sure to set the environment variable
+of `FORCE_SSL_ADMIN` to `1`.
 
 As usual, after you configure your reverse proxy visit
 https://domainname.example.com/wp-admin/install.php to install
