@@ -6,6 +6,8 @@ RUN apt-get update && \
 
 RUN docker-php-ext-install pgsql
 
+RUN cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
+
 WORKDIR /var/www/html
 
 COPY . /var/www/html
