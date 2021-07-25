@@ -38,11 +38,11 @@ define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', '' );
 
 if (getenv('FORCE_SSL') == '1') {
-    if ($_SERVER[‘HTTP_X_FORWARDED_PROTO’] == ‘https’) {
-        $_SERVER[‘HTTPS’]=’on’;
+    if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
+        $_SERVER['HTTPS']='on';
     }
-    if (isset($_SERVER[‘HTTP_X_FORWARDED_HOST’])) {
-        $_SERVER[‘HTTP_HOST’] = $_SERVER[‘HTTP_X_FORWARDED_HOST’];
+    if (isset($_SERVER['HTTP_X_FORWARDED_HOST'])) {
+        $_SERVER['HTTP_HOST'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
     }
 }
 
