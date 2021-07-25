@@ -37,8 +37,13 @@ define( 'DB_CHARSET', 'utf8' );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
-if (getenv('FORCE_SSL_ADMIN') == '1') {
-    define('FORCE_SSL_ADMIN', true);
+if (getenv('FORCE_SSL') == '1') {
+    if ($_SERVER[‘HTTP_X_FORWARDED_PROTO’] == ‘https’) {
+        $_SERVER[‘HTTPS’]=’on’;
+    }
+    if (isset($_SERVER[‘HTTP_X_FORWARDED_HOST’])) {
+        $_SERVER[‘HTTP_HOST’] = $_SERVER[‘HTTP_X_FORWARDED_HOST’];
+    }
 }
 
 /**#@+

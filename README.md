@@ -24,7 +24,7 @@ If you are using a reverse proxy to terminate SSL, make sure it
 passes the header of `X-Forwarded-Proto` as `https`, otherwise
 WordPress will generate invalid links,
 and also be sure to set the environment variable
-of `FORCE_SSL_ADMIN` to `1`.
+of `FORCE_SSL` to `1`.
 
 ## Plugins surviving restarts
 
