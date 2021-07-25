@@ -1,2 +1,19 @@
-# wordpress-pgsql
+wordpress-pgsql
+===============
 A Wordpress Docker image with PostgreSQL support
+
+
+Usage:
+
+You need to provide following environment variables:
+
+* DB_NAME - name of the PostgreSQL database to use
+* DB_USER - login for PostgreSQL
+* DB_PASSWORD - password for PostgreSQL
+* DB_HOST - host where PostgreSQL is located
+
+# Special thanks
+
+Special thanks to
+[Shoaib Hassan](https://medium.com/@shoaibhassan_/install-wordpress-with-postgresql-using-apache-in-5-min-a26078d496fb)
+without whom this script would have taken much longer to write!
