@@ -9,3 +9,5 @@ RUN apt-get update && \
 WORKDIR /var/www/html
 
 COPY . /var/www/html
+
+RUN chmod ugo+rwx -R /var/www/html

@@ -18,6 +18,9 @@ As usual, after you configure your reverse proxy visit
 https://domainname.example.com/wp-admin/install.php to install
 WordPress.
 
+To enable uploads to work, you should mount 
+`/var/www/html/wp-content/uploads` as a volume.
+
 ## Reverse proxy terminating SSL
 
 If you are using a reverse proxy to terminate SSL, make sure it 
