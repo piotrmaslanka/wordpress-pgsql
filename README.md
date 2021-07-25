@@ -15,6 +15,10 @@ You need to provide following environment variables:
 The scripts uses port 80 to serve WordPress over HTTP, 
 so configure your certificates on a reverse proxy.
 
+If you are using a reverse proxy to terminate SSL, make sure it 
+passes the header of `X-Forwarded-Proto` as `https`, otherwise
+WordPress will generate invalid links.
+
 As usual, after you configure your reverse proxy visit
 https://domainname.example.com/wp-admin/install.php to install
 WordPress.
