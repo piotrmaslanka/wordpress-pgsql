@@ -1,5 +1,8 @@
 wordpress-pgsql
 ===============
+[![docker hub plugin](https://img.shields.io/badge/docker%20hub-1.0-00FF00)](https://hub.docker.com/r/smokserwis/wordpress-pgsql)
+[![source at github](https://img.shields.io/badge/github-available-green)](https://github.com/piotrmaslanka/wordpress-pgsql)
+
 A Wordpress Docker image with PostgreSQL support
 
 # Usage
