@@ -5,6 +5,10 @@ wordpress-pgsql
 
 A Wordpress Docker image with PostgreSQL support
 
+**Work is in progress for support of WordPress 6.22**
+
+Use the ready working and testing tag v5.8.
+
 # Usage
 
 You need to provide following environment variables:
