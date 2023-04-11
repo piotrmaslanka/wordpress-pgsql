@@ -7,7 +7,7 @@ A Wordpress Docker image with PostgreSQL support.
 
 Please refer to branch v5.8 for WordPress 5.8.
 
-On the current branch, ie. master, development for v6.2 is carried out.
+On the current branch, ie. master, WordPress 6.2 runs.
 
 # Usage
 
@@ -19,8 +19,7 @@ You need to provide following environment variables:
 * `DB_HOST` - host where PostgreSQL is located
 * `AUTH_KEY` - a random string that will be used for security purposes
 
-The container uses port 80 to handle WordPress
-requests over HTTP.
+The container uses port 80 to handle WordPress requests over HTTP.
 
 As usual, after you configure your reverse proxy visit
 https://domainname.example.com/wp-admin/install.php to install

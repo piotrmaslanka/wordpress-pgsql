@@ -753,7 +753,7 @@ class wpdb {
 
 		// Use the `mysqli` extension if it exists unless `WP_USE_EXT_MYSQL` is defined as true.
 		if ( function_exists( 'mysqli_connect' ) ) {
-			$this->use_mysqli = true;
+			$this->use_mysqli = false;
 
 			if ( defined( 'WP_USE_EXT_MYSQL' ) ) {
 				$this->use_mysqli = ! WP_USE_EXT_MYSQL;
