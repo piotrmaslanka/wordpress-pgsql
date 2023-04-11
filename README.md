@@ -3,7 +3,11 @@ wordpress-pgsql
 [![docker hub plugin](https://img.shields.io/badge/docker%20hub-1.0-00FF00)](https://hub.docker.com/r/smokserwis/wordpress-pgsql)
 [![source at github](https://img.shields.io/badge/github-available-green)](https://github.com/piotrmaslanka/wordpress-pgsql)
 
-A Wordpress Docker image with PostgreSQL support
+A Wordpress Docker image with PostgreSQL support.
+
+Please refer to branch v5.8 for WordPress 5.8.
+
+On the current branch, ie. master, development for v6.2 is carried out.
 
 # Usage
 
@@ -13,6 +17,7 @@ You need to provide following environment variables:
 * `DB_USER` - login for PostgreSQL
 * `DB_PASSWORD` - password for PostgreSQL
 * `DB_HOST` - host where PostgreSQL is located
+* `AUTH_KEY` - a random string that will be used for security purposes
 
 The container uses port 80 to handle WordPress
 requests over HTTP.

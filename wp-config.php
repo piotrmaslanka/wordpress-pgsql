@@ -57,14 +57,14 @@ if (getenv('FORCE_SSL') == '1') {
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'AUTH_KEY',         getenv('AUTH_KEY'));
+define( 'SECURE_AUTH_KEY',  getenv('AUTH_KEY') );
+define( 'LOGGED_IN_KEY',    getenv('AUTH_KEY') );
+define( 'NONCE_KEY',        getenv('AUTH_KEY') );
+define( 'AUTH_SALT',        getenv('AUTH_KEY') );
+define( 'SECURE_AUTH_SALT', getenv('AUTH_KEY') );
+define( 'LOGGED_IN_SALT',   getenv('AUTH_KEY') );
+define( 'NONCE_SALT',       getenv('AUTH_KEY') );
 
 /**#@-*/
 

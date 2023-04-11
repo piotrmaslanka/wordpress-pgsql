@@ -6,6 +6,8 @@ RUN apt-get update && \
     docker-php-ext-install pgsql && \
     cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
 
+ENV AUTH_KEY=put-your-phrase-here
+
 WORKDIR /var/www/html
 
 COPY . /var/www/html
